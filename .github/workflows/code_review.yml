@@ -13,10 +13,6 @@ on:
     types:
       - completed
 
-  # 3️⃣ Scheduled run every 2 hours
- # schedule:
-  #  - cron: '0 */2 * * *'
-
 jobs:
   review-code:
     if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'push' || github.event_name == 'schedule' }}
