@@ -12,8 +12,8 @@ on:
     types: [opened, edited, reopened]
   issue_comment:
     types: [created]
-  schedule:
-    - cron: '0 * * * *'  # every hour
+#  schedule:
+#    - cron: '0 * * * *'  # every hour
 
 jobs:
   generate-code:
